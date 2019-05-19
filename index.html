@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <title>CM-Projeto2</title>
     <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <!--script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script-->
 </head>
 <body>
-<a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-    <a-sky color="#ECECEC"></a-sky>
+<a-scene background="color:lightblue">
+
+    <a-assets>
+        <audio id="bandito1" crossorigin="anonymous" src="sound/bandito-loop1.mp3" ></audio>
+        <video id="boxTexture" autoplay loop="true" crossorigin="anonymous" src="video/flor.mp4"></video>
+    </a-assets>
+
+    <a-sound autoplay="true" loop="true" src="#bandito1"></a-sound>
+
+    <a-box src="#boxTexture" position="0 0.5 -3" height="1" width="1" depth="1"></a-box>
+
 </a-scene>
 </body>
 </html>

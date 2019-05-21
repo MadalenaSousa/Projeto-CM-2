@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>CM-Projeto2</title>
     <script src="aframe.min.js"></script>
-    <!--script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <!--script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script-->
 </head>
 <body>
@@ -22,9 +22,12 @@
         <a-cursor></a-cursor>
     </a-camera>
 
-    <a-sound autoplay="true" loop="true" src="#morph3"></a-sound>
+    <a-sound id="guillotine" loop="true" src="#guillotine2"></a-sound>
 
-    <a-cylinder src="#boxTexture" height="20" radius="3" position="0 0 -24"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="0 0 -24"
+                event-set__mouseenter="_target:#guillotine; on: true"
+                event-set__mouseleave="_target:#guillotine; on: false"
+    ></a-cylinder>
 
     <a-cylinder src="#boxTexture" height="20" radius="3" position="12 0 -20"></a-cylinder>
     <a-cylinder src="#boxTexture" height="20" radius="3" position="20 0 -12"></a-cylinder>

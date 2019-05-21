@@ -13,30 +13,36 @@
 
     <a-assets>
         <audio id="bandito1" crossorigin="anonymous" src="sound/bandito-loop1.mp3" ></audio>
+        <audio id="guillotine2" crossorigin="anonymous" src="sound/guillotine-loop2.mp3" ></audio>
+        <audio id="morph3" crossorigin="anonymous" src="sound/morph-loop3.mp3" ></audio>
         <video id="boxTexture" autoplay loop="true" crossorigin="anonymous" src="video/flor.mp4"></video>
     </a-assets>
 
-    <a-sound autoplay="false" loop="true" src="#bandito1"></a-sound>
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="0 0 -18"></a-cylinder>
+    <a-sound autoplay="true" loop="true" src="#morph3"></a-sound>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="6 0 -12"></a-cylinder>
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="12 0 -6"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="0 0 -24"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="18 0 0"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="12 0 -20"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="20 0 -12"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="12 0 6"></a-cylinder>
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="6 0 12"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="24 0 0"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="0 0 18"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="20 0 12"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="12 0 20"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="-6 0 12"></a-cylinder>
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="-12 0 6"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="0 0 24"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="-18 0 0"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="-12 0 20"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="-20 0 12"></a-cylinder>
 
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="-12 0 -6"></a-cylinder>
-    <a-cylinder src="#boxTexture" height="10" radius="1.5" position="-6 0 -12"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="-24 0 0"></a-cylinder>
+
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="-20 0 -12"></a-cylinder>
+    <a-cylinder src="#boxTexture" height="20" radius="3" position="-12 0 -20"></a-cylinder>
 
 </a-scene>
 </body>

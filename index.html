@@ -5,8 +5,8 @@
     <title>CM-Projeto2</title>
     <script src="aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
-    <!--script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script-->
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <!--script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script-->
 </head>
 <body>
 <a-scene background="color:black">
@@ -15,8 +15,11 @@
         <audio id="bandito1" crossorigin="anonymous" src="sound/bandito-loop1.mp3" ></audio>
         <audio id="guillotine2" crossorigin="anonymous" src="sound/guillotine-loop2.mp3" ></audio>
         <audio id="morph3" crossorigin="anonymous" src="sound/morph-loop3.mp3" ></audio>
-        <video id="boxTexture" autoplay loop="true" crossorigin="anonymous" src="video/flor.mp4"></video>
+        <video id="boxTexture" autoplay loop="true" crossorigin="anonymous" src="video/uni.MP4"></video>
+        <img id="fundo" src="images/fundo.jpg">
     </a-assets>
+
+    <a-sky src="#fundo"></a-sky>
 
     <a-camera>
         <a-cursor></a-cursor>
